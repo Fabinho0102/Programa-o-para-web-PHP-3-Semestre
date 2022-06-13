@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Eleições</title>
+</head>
+
+<body>
+  <main>
+    <section class="container">
+      <div class="register">
+        <form method="post" action="insert.php" name="dados" onSubmit="return enviardados();">
+          <fieldset>
+            <legend style="color:rgb(78, 48, 14); font-size: 24px; font-family: 'Koulen', cursive; font-size: 32px;">
+              Eleições 2022!!</legend>
+            <div class="form">
+              <div class="form-row">
+                <label class="form-label " for="input">Nome do Eleitor: </label>
+                <br>
+                <input type="text" class="form-text" placeholder="Digite Seu nome" name="eleitor" id="eleitor">
+                <br>
+                <br>
+                <label class="form-label" for="input" placeholder="Digite o número do título">Número do Título do
+                  Eleitor: </label>
+                <br>
+                <input type="number" class="form-text" name="titulo" id="titulo"
+                  placeholder="Digite o Número do Título">
+                <br>
+                <br>
+                <label class="form-label" for="input" placeholder="Digite os Números do seu RG">RG: </label>
+                <br>
+                <input type="number" class="form-text" name="rg" id="rg" placeholder="Digite os Núremos">
+                <br>
+                <br>
+                <label class="form-label" for="input" id="cpflabel">CPF: </label>
+                <br>
+                <input type="number" class="form-text" name="cpf" id="cpf" placeholder="Digite o seu CPF: ">
+                <br>
+                <br>
+                <label class="form-label" for="input">Data: </label>
+                <input type="date" class="form-text" name="data" id="data">
+                <br>
+                <br>
+                <label class="form-label" for="input">Estado/UF: </label>
+                <select name="estado">
+                  <option value="AC">AC</option>
+                  <option value="AL">AL</option>
+                  <option value="AP">AP</option>
+                  <option value="AM">AM</option>
+                  <option value="BA">BA</option>
+                  <option value="CE">CE</option>
+                  <option value="DF">DF</option>
+                  <option value="ES">ES</option>
+                  <option value="GO">GO</option>
+                  <option value="MA">MA</option>
+                  <option value="MT">MT</option>
+                  <option value="MS">MS</option>
+                  <option value="MG">MG</option>
+                  <option value="PA">PA</option>
+                  <option value="PB">PB</option>
+                  <option value="PR">PR</option>
+                  <option value="PE">PE</option>
+                  <option value="PI">PI</option>
+                  <option value="RJ">RJ</option>
+                  <option value="RN">RN</option>
+                  <option value="RS">RS</option>
+                  <option value="RO">RO</option>
+                  <option value="RR">RR</option>
+                  <option value="SC">SC</option>
+                  <option value="SP">SP</option>
+                  <option value="SE">SE</option>
+                  <option value="TO">TO</option>
+                </select>
+                <br>
+                <br>
+                <label class="form-label " for="input">Cidade: </label>
+                <br>
+                <input type="text" class="form-text" name="cidade" id="cidade" placeholder="Qual sua Cidade">
+                <br>
+                <br>
+                <label class="form-label " for="input">Municipio: </label>
+                <br>
+                <input type="text" class="form-text" name="municipio" id="municipio" placeholder="Qual seu Municipio">
+                <br>
+                <br>
+                <div>
+
+                  <legend style="color:rgb(78, 48, 14); font-size: 24px; font-family: 'Koulen', cursive; font-size: 32px;">Voto do Eleitor</legend>
+
+                  <label class="form-label" for="input">Número da Legenda ou Código do partido: </label>
+                  <br>
+                  <input type="number" class="form-text" name="codigo" id="codigo">
+                  <br>
+                  <br>
+                  <label class="form-label" for="input">Voto: </label>
+                  <br>
+                  <input type="number" class="form-text" name="voto" id="voto">
+                  <br>
+                  <br>
+                  <div>
+                    <span>
+                      <input name="votar" type="submit" class="formobjects" value="Confirma"
+                        formaction="insert.php">
+                    </span>
+                    <span>
+                      <button class='waves-effect waves-light btn type=' submit' name='action'
+                        formaction='listar.php'>ler
+                      </button>
+                    </span>
+                  
+                  </div>
+                </div>
+                </span>
+
+              </div>
+
+
+            </div>
+      </div>
+      </fieldset>
+      </form>
+      </div>
+    </section>
+    <section>
+
+    </section>
+  </main>
+</body>
+
+</html>
